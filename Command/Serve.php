@@ -5,6 +5,11 @@ namespace EsTeh\Console\Command;
 use EsTeh\Console\Color as C;
 use EsTeh\Contracts\Console\Command as CommandContract;
 
+/**
+ * @author Ammar Faizi <ammarfaizi2@gmail.com> https://www.facebook.com/ammarfaizi2
+ * @package \EsTeh\Console\Command
+ * @license MIT
+ */
 class Serve implements CommandContract
 {
 	private $argv = [];
