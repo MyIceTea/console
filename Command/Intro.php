@@ -16,6 +16,9 @@ class Intro implements CommandContract
 
 	public function run()
 	{
+if (isset($this->argv["quiet"])) {
+	exit(0);
+}
 echo 
 "
 EsTeh Framework ".C::clr(ESTEH_VERSION, "green")."
@@ -25,7 +28,7 @@ EsTeh Framework ".C::clr(ESTEH_VERSION, "green")."
 
 ".C::clr("Options:", "brown")."
   ".C::clr("-h, --help", "green")."		Display this help message
-  ".C::clr("-q, --quite", "green")."		Do not output any message
+  ".C::clr("-q, --quiet", "green")."		Do not output any message
 
 ".C::clr("Available commands:", "brown")."
   ".C::clr("serve", "green")."			Serve the application on the PHP development server
@@ -39,6 +42,5 @@ EsTeh Framework ".C::clr(ESTEH_VERSION, "green")."
 
 	public function terminate()
 	{
-
 	}
 }

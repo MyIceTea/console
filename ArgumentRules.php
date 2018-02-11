@@ -9,9 +9,11 @@ class ArgumentRules
 			"" => [
 				"strip" => [
 					"-h" => ["state" => "help"],
+					"-q" => ["state" => "quiet"]
 				],
 				"double_strip" => [
-					"--help" => ["state" => "help"]
+					"--help" => ["state" => "help"],
+					"--quiet" => ["state" => "quiet"]
 				]
 			],
 			"make:controller" => [
